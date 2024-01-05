@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dobos Dominik</title>
+    <meta name="description" content="Dobos Dominik portfólió oldala." />
+    <meta name="keywords" content="portfolio, Dobos Dominik, weboldal" />
+    <meta name="author" content="Dobos Dominik" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stilus.css" />
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul id="nav-ul">
+          <li class="nav-li" id="logo">
+            <a href="#section-landing">Dobos Dominik</a>
+          </li>
+          <li></li>
+          <li class="nav-li"><a href="#section-tapasztalat">Rólam</a></li>
+          <li class="nav-li"><a href="#section-projektek">Projektek</a></li>
+          <li class="nav-li"><a href="#section-kapcsolat">Kapcsolat</a></li>
+        </ul>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-list hamburger"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
+      </nav>
+      <button id="fel" onclick="location.href='#section-landing'">
+        <img class="icon" src="./kepek/arrow-up.png" alt="felfelé nyíl" />
+      </button>
+      <section id="section-landing">
+        <div id="section-landing__container">
+          <div id="profil-kep__div">
+            <img
+              src="./kepek/önarckép.jpg"
+              alt="Kép rólam"
+              id="profil-kep__img"
+            />
+          </div>
+          <div id="section_landing__text-div">
+            <h1 class="section-text__nagy" id="section-title__szin">
+              Dobos Dominik
+            </h1>
+            <p class="section-text__kicsi">Szoftverfejlesztő</p>
+            <div class="btn-container">
+              <button
+                class="btn-2 btn"
+                onclick="location.href='#section-kapcsolat'"
+              >
+                Kapcsolat
+              </button>
+              <button
+                class="btn-1 btn"
+                onclick="window.open('asset/DobosDominik_cv.pdf')"
+              >
+                Életrajz
+              </button>
+            </div>
+            <a href="https://github.com/dominikdobos" target="_blank"
+              ><img src="./kepek/github.png" alt="github icon" class="icon"
+            /></a>
+          </div>
+        </div>
+      </section>
+      <section id="section-tapasztalat">
+        <h1 class="section-text__nagy section__title">Tapasztalat</h1>
+        <div id="section-tapasztalat__container">
+          <p class="section-text__kicsi section-tapasztalat__text">Frontend</p>
+          <ul class="section-tapasztalat__ul">
+            <li>
+              <div class="section-tapasztalat__li-div">
+                <img
+                  src="./kepek/patch-check-fill.svg"
+                  alt="checkmark"
+                  class="icon section-tapasztalat__checkbox"
+                />
+                <p>HTML</p>
+              </div>
+            </li>
+            <li>
+              <div class="section-tapasztalat__li-div">
+                <img
+                  src="./kepek/patch-check-fill.svg"
+                  alt="checkmark"
+                  class="icon section-tapasztalat__checkbox"
+                />
+                <p>CSS</p>
+              </div>
+            </li>
+            <li>
+              <div class="section-tapasztalat__li-div">
+                <img
+                  src="./kepek/patch-check-fill.svg"
+                  alt="checkmark"
+                  class="icon section-tapasztalat__checkbox"
+                />
+                <p>Javascript</p>
+              </div>
+            </li>
+          </ul>
+          <p
+            class="section-text__kicsi section-tapasztalat__text"
+            id="section-tapasztalat__backend"
+          >
+            Backend
+          </p>
+          <ul class="section-tapasztalat__ul">
+            <li>
+              <div class="section-tapasztalat__li-div">
+                <img
+                  src="./kepek/patch-check-fill.svg"
+                  alt="checkmark"
+                  class="icon section-tapasztalat__checkbox"
+                />
+                <p>Python</p>
+              </div>
+            </li>
+            <li>
+              <div class="section-tapasztalat__li-div">
+                <img
+                  src="./kepek/patch-check-fill.svg"
+                  alt="checkmark"
+                  class="icon section-tapasztalat__checkbox"
+                />
+                <p>C#</p>
+              </div>
+            </li>
+            <li>
+              <div class="section-tapasztalat__li-div">
+                <img
+                  src="./kepek/patch-check-fill.svg"
+                  alt="checkmark"
+                  class="icon section-tapasztalat__checkbox"
+                />
+                <p>Java</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="section-projektek">
+        <h1 class="section-text__nagy section__title" id="projekt-title">
+          Projektek
+        </h1>
+        <div id="section-projektek__container">
+          <div class="section-projektek__projekt">
+            <p class="section-text__kicsi">Webprogramozás</p>
+            <div class="projekt-card">
+              <img
+                src="./kepek/webprog.png"
+                alt="webprogramozás logo"
+                class="projekt-img"
+              />
+            </div>
+            <button
+              class="btn-projekt"
+              onclick="location.href='projektek.html#projektek-webdev'"
+            >
+              Projektek megtekintése
+            </button>
+          </div>
+          <div class="section-projektek__projekt">
+            <p class="section-text__kicsi">Java</p>
+            <div class="projekt-card">
+              <img src="./kepek/java.png" alt="java logo" class="projekt-img" />
+            </div>
+            <button
+              class="btn-projekt"
+              onclick="location.href='projektek.html#projektek-java'"
+            >
+              Projektek megtekintése
+            </button>
+          </div>
+          <div class="section-projektek__projekt">
+            <p class="section-text__kicsi">Python</p>
+            <div class="projekt-card">
+              <img
+                src="./kepek/python.png"
+                alt="python logo"
+                class="projekt-img"
+              />
+            </div>
+            <button
+              class="btn-projekt"
+              onclick="location.href='projektek.html#projektek-python'"
+            >
+              Projektek megtekintése
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="section-kapcsolat">
+        <h1 class="section-text__nagy section__title">Kapcsolat</h1>
+        <div id="section-kapcsolat__containter">
+          <div id="section-kapcsolat__form-div">
+            <p class="section-text__kicsi section-kapcsolat__title">
+              Visszajelzés küldése
+            </p>
+            <form id="section-kapcsolat__form">
+              <label for="nev">Név:</label>
+              <input type="text" id="nev" placeholder="Név helye..." />
+
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" placeholder="...@gmail.com" />
+
+              <label for="uzenet">Üzenet:</label>
+              <textarea
+                id="uzenet"
+                placeholder="Visszajelzés helye..."
+                maxlength="300"
+              ></textarea>
+
+              <button type="reset" class="btn-form">Küldés!</button>
+            </form>
+          </div>
+          <div id="section-kapcsolat__elerhetoseg">
+            <p class="section-text__kicsi section-kapcsolat__title">
+              Elérhetőségek
+            </p>
+            <div id="elerhetoseg-grid-container">
+              <div class="elerhetoseg-grid">
+                <img
+                  src="./kepek/telephone-fill.svg"
+                  alt="telefon ikon"
+                  class="elerhetoseg-icon"
+                />
+                <p>+36 20 221 5874</p>
+                <img
+                  src="./kepek/envelope-fill.svg"
+                  alt="email ikon"
+                  class="elerhetoseg-icon"
+                />
+                <p>dominik.dobos33@gmail.com</p>
+              </div>
+              <div class="elerhetoseg-grid-ikonok">
+                <a href="https://twitter.com/?lang=hu"
+                  ><img
+                    src="./kepek/twitter.svg"
+                    alt="twitter ikon"
+                    class="elerhetoseg-icon"
+                /></a>
+                <a href="https://www.facebook.com"
+                  ><img
+                    src="./kepek/facebook.svg"
+                    alt="facebook ikon"
+                    class="elerhetoseg-icon"
+                /></a>
+
+                <a href="https://hu.linkedin.com"
+                  ><img
+                    src="./kepek/linkedin.svg"
+                    alt="linkedIn ikon"
+                    class="elerhetoseg-icon"
+                /></a>
+
+                <a href="https://www.instagram.com"
+                  ><img
+                    src="./kepek/instagram.svg"
+                    alt="instagram ikon"
+                    class="elerhetoseg-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

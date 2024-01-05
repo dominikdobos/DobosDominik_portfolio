@@ -1,0 +1,163 @@
+section {
+  padding-top: 10vh;
+  height: 100%;
+}
+
+#nav-ul {
+  height: 13vh;
+}
+
+#webprog {
+  background: linear-gradient(45deg, rgb(0, 255, 183), rgb(17, 0, 255));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 60px;
+}
+
+#java {
+  background: linear-gradient(45deg, rgb(255, 225, 0), rgb(255, 0, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 60px;
+}
+
+#python {
+  background: linear-gradient(45deg, rgb(0, 255, 140), rgb(10, 58, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  padding-bottom: 60px;
+}
+
+.info {
+  border: 2px solid #222;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info:hover {
+  background-color: #222;
+}
+
+.info:hover .info-text {
+  color: white;
+}
+
+.info-text {
+  font-size: 2.3rem;
+  cursor: pointer;
+}
+
+.projekt-gomb:hover .letolt {
+  fill: white;
+}
+
+.github-div {
+  width: 40px;
+  height: 40px;
+  background-image: url("kepek/github.png");
+}
+
+.projekt-gomb:hover .github-div {
+  background-image: url("./kepek/github-white.png");
+}
+
+.projekt-gomb {
+  padding: 10px;
+  border-radius: 25px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+}
+
+.projekt-gomb:hover {
+  background-color: #222;
+  color: white;
+}
+
+.projekt-kep {
+  border-radius: 20px;
+}
+
+.projekt-gombok {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  gap: 10px;
+}
+
+#info {
+  cursor: pointer;
+}
+
+.projektek-container {
+  width: 60%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
+  justify-items: center;
+  padding-bottom: 5vh;
+}
+
+.projekt {
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+  gap: 20px;
+  justify-items: center;
+  border: 2px solid #222;
+  border-radius: 40px;
+  padding: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projekt-kep__div {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+
+/* modal */
+
+.bezar {
+  cursor: pointer;
+  border: 2px solid #222;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 50%;
+  text-align: end;
+}
+
+.bezar:hover {
+  fill: white;
+  background-color: #222;
+  border-radius: 50%;
+}
+
+.modal {
+  padding: 10px;
+  max-width: 50ch;
+  text-align: center;
+  border-radius: 20px;
+  margin: auto;
+}
+
+.modal::backdrop {
+  background-color: #222222e2;
+}
+
+@media screen and (max-width: 1500px) {
+  .projektek-container {
+    grid-template-columns: 1fr;
+  }
+}
