@@ -12,25 +12,37 @@
   </head>
   <body>
     <main>
-      <nav>
-        <ul id="nav-ul">
-          <li class="nav-li" id="logo">
-            <button
-              class="btn-1"
-              onclick="location.href='index.html#section-projektek'"
-            >
-              Vissza
-            </button>
+      <nav class="navbar">
+        <button
+          class="btn-1 vissza"
+          onclick="location.href='index.html#section-projektek'"
+        >
+          Vissza
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#projektek-webdev" class="nav-link">Webprogramozás</a>
           </li>
-          <li class="nav-li"></li>
-          <li class="nav-li">
-            <a href="#projektek-webdev">Webprogramozás</a>
+          <li class="nav-item">
+            <a href="#projektek-java" class="nav-link">Java</a>
           </li>
-          <li class="nav-li">
-            <a href="#projektek-java">Java</a>
+          <li class="nav-item">
+            <a href="#projektek-python" class="nav-link">Python</a>
           </li>
-          <li class="nav-li"><a href="#projektek-python">Python</a></li>
         </ul>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          fill="currentColor"
+          class="bi bi-list hamburger"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+          />
+        </svg>
       </nav>
       <section id="projektek-webdev">
         <h1 class="section-text__nagy section__title" id="webprog">
@@ -822,5 +834,6 @@
       </section>
     </main>
     <script src="projekt.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>

@@ -98,8 +98,7 @@ section {
 }
 
 .projektek-container {
-  width: 60%;
-  margin: auto;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 50px;
@@ -159,5 +158,56 @@ section {
 @media screen and (max-width: 1500px) {
   .projektek-container {
     grid-template-columns: 1fr;
+  }
+}
+
+.vissza {
+  margin: 0 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .vissza {
+    max-width: 128px;
+    flex-basis: 90%;
+  }
+
+  .navbar {
+    padding-top: 0;
+  }
+
+  .hamburger {
+    position: absolute;
+    right: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .section__title {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .projekt-gombok {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .projekt {
+    padding: 10px;
+    max-width: 324px;
+  }
+
+  .projektek-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section__title {
+    font-size: 2.4rem;
   }
 }
