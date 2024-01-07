@@ -433,7 +433,11 @@ textarea {
   font-size: 1.3rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
+  #section-landing {
+    padding-top: 20vh;
+  }
+
   #section-landing__container {
     display: grid;
     justify-content: center;
@@ -456,7 +460,7 @@ textarea {
 
   .hamburger {
     position: absolute;
-    right: 20px;
+    right: 40px;
     display: block;
     flex-basis: 10%;
     cursor: pointer;
@@ -472,7 +476,7 @@ textarea {
   }
 
   .navbar {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   .nav-menu.active {
